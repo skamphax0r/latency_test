@@ -7,6 +7,8 @@ from prometheus_client import start_http_server, Summary, Gauge
 
 LATENCY_TIME = Gauge('latency_getting_google', 'latency to google')
 LATENCY_LOCAL = Gauge('local_latency', 'hitting localhost')
+
+
 def get_latency():
     """a function to grab latency to google.com"""
     url = 'http://google.com'
